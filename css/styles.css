@@ -1,0 +1,145 @@
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+  -color-transparent-white: rgba(255, 255, 255, 0.75);
+  --color-light-gray: hsl(0, 0%, 95%);
+  --font-light: "Big Shoulder Display";
+  --font-big: "Lexend Deca"; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 93.75%;
+  box-sizing: border-box; }
+
+.cards {
+  display: flex;
+  margin: 9rem auto;
+  padding-right: 2.8rem;
+  color: var(--color-light-gray);
+  font-family: var(--font-big);
+  width: 30rem;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cards {
+      flex-direction: column;
+      margin: 0;
+      padding: 1rem;
+      width: 100%;
+      align-items: stretch; } }
+  .cards__car-icon {
+    width: 3.2rem;
+    height: 3.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__car-icon {
+        width: 7.2rem;
+        height: 7.2rem; } }
+  .cards__1 {
+    background-color: var(--color-bright-orange);
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+    padding: 2rem 2rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__1 {
+        margin: 0;
+        height: 45rem;
+        padding: 2rem;
+        padding-left: 5rem;
+        padding-right: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .cards__1 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; } }
+  .cards__2 {
+    background-color: var(--color-dark-cyan);
+    padding: 2rem 2rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__2 {
+        margin: 0;
+        height: 45rem;
+        padding: 2rem;
+        padding-left: 5rem;
+        padding-right: 2rem; } }
+  .cards__3 {
+    background-color: var(--color-very-dark-cyan);
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    padding: 2rem 2rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__3 {
+        margin: 0;
+        height: 45rem;
+        padding: 2rem;
+        padding-left: 5rem;
+        padding-right: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .cards__3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; } }
+  .cards__heading {
+    font-family: var(--font-light);
+    margin-top: -3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__heading {
+        font-size: 3.5rem; } }
+  .cards__para {
+    color: rgba(242, 242, 242, 0.699);
+    font-size: .9rem;
+    margin-top: -3rem;
+    width: 14rem;
+    line-height: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__para {
+        font-size: 1.7rem;
+        width: 90%;
+        line-height: 2.8rem;
+        color: rgba(242, 242, 242, 0.55); } }
+  .cards__button {
+    background-color: var(--color-light-gray);
+    height: 3rem;
+    width: 9rem;
+    border-style: none;
+    text-align: center;
+    border-radius: 3rem;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--font-light);
+    transition: all 0.2s; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__button {
+        height: 5rem;
+        width: 50%;
+        font-size: 1.4rem; } }
+    .cards__button:hover {
+      background-color: transparent;
+      color: var(--color-light-gray);
+      border: 1px solid var(--color-light-gray); }
+    .cards__button__1 {
+      color: var(--color-bright-orange); }
+    .cards__button__2 {
+      color: var(--color-dark-cyan); }
+    .cards__button__3 {
+      color: var(--color-very-dark-cyan); }
